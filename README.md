@@ -1,16 +1,8 @@
 # Dynamic CLI Loading Animation
+A lightweight, thread-based loading animation for Python.
 
-A lightweight, thread-based Python utility to display animated loading messages in the terminal. This tool allows you to run background tasks while providing visual feedback to the user, including the ability to **update the status message dynamically**.
-
-## ✨ Features
-
-* **Non-blocking:** Uses Python's `threading` to run the animation without stopping your main logic.
-* **Context Manager Support:** Clean usage with the `with` statement.
-* **Dynamic Updates:** Change the loading message on the fly (e.g., from "Downloading..." to "Processing...").
-* **Auto-cleanup:** Automatically clears the terminal line when the task is finished.
-* **Zero Dependencies:** Uses only Python standard libraries (`sys`, `time`, `threading`).
-
-## 🚀 Quick Start
+![Demo](demo.gif) 
+## Quick Start
 
 To use the loading animation in your project, simply copy the `loading_animation` function and its helper into your script.
 
