@@ -2,31 +2,39 @@
 A lightweight, thread-based loading animation for Python.
 
 ![Demo](demo.gif) 
-## Quick Start
+## Installation
 
-To use the loading animation in your project, simply copy the `loading_animation` function and its helper into your script.
+```bash
+# Clone the repository
+git clone https://github.com/enzoustk/python-loading-animation.git
+cd python-loading-animation
+
+# Install in editable mode
+pip install -e .
+```
+
+## Quick Start
 
 ```python
 import time
-from your_module import loading_animation
+from loading_animation import loading_animation
 
 # Basic usage
-with loading_animation("Initial task"):
+with loading_animation("Processing data"):
     time.sleep(2)
-    # The animation stops automatically after this block
 
 # Dynamic message updates
 with loading_animation("Preparing...") as status:
     time.sleep(1.5)
-    
     status['message'] = "Downloading data"
     time.sleep(2)
-    
-    status['message'] = "Generating report"
-    time.sleep(1.5)
+```
 
-print("Done!")
+## Running the Demo
 
+```bash
+pip install -e .
+python examples/demo.py
 ```
 
 ## 🛠️ How It Works
